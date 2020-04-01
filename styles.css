@@ -1,8 +1,9 @@
 .grid {
   display: grid;
   gap: 10px;
-  grid-template-columns: 4fr repeat(3, 1fr);
-  grid-template-rows: 100px;
+  height: 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr;
 }
 
 .header {
