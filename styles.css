@@ -5,8 +5,7 @@
   height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
-  justify-content: space-between;
-  align-content: end;
+  place-content: end center;
 }
 
 .header {
