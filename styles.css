@@ -1,10 +1,12 @@
 .grid {
+  background-color: #555;
   display: grid;
   gap: 10px;
-  height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  place-items: end start;
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  justify-content: space-between;
+  align-content: end;
 }
 
 .header {
