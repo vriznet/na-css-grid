@@ -1,27 +1,22 @@
 .grid {
   display: grid;
-  grid-template-columns: [line1] 100px [line2] 100px [line3] 100px [line4] 100px [line5];
-  grid-template-rows: [line1] 100px [line2] 100px [line3] 100px [line4] 100px [line5];
   gap: 10px;
+  grid-template-columns: 4fr repeat(3, 1fr);
+  grid-template-rows: 100px;
 }
 
 .header {
   background-color: #2ecc71;
-  grid-column: line1 / line5;
 }
 
 .content {
   background-color: #3498db;
-  grid-column: line1 / line4;
-  grid-row: line2 / line4;
 }
 
 .nav {
   background-color: #8e44ad;
-  grid-row: line2 / line4;
 }
 
 .footer {
   background-color: #f39c12;
-  grid-column: line1 / line5;
 }
