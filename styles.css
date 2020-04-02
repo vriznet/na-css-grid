@@ -1,31 +1,15 @@
 .grid {
   display: grid;
   gap: 10px;
-  height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(1, 100px);
+  grid-auto-rows: 100px;
 }
 
-.header {
+.item:nth-child(odd) {
   background-color: #2ecc71;
-  justify-self: start;
-  align-self: end;
 }
 
-.content {
+.item:nth-child(even) {
   background-color: #3498db;
-  justify-self: end;
-  align-self: start;
-}
-
-.nav {
-  background-color: #8e44ad;
-  justify-self: center;
-  align-self: end;
-}
-
-.footer {
-  background-color: #f39c12;
-  justify-self: center;
-  align-self: center;
 }
