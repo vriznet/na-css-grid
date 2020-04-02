@@ -1,8 +1,14 @@
-.grid {
+.grid1 {
   display: grid;
   gap: 10px;
-  grid-template-columns: max-content min-content;
-  grid-template-rows: max-content min-content;
+  grid-template-columns: repeat(5, minmax(max-content, 1fr));
+  grid-auto-rows: 100px;
+}
+
+.grid2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(20px, max-content));
   grid-auto-rows: 100px;
 }
 
